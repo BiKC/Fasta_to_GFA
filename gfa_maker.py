@@ -16,7 +16,7 @@ if len(sys.argv) == 2:
     print("No output location supplied")
     sys.exit()
 
-if not os.isdir(sys.argv[-1]):
+if not os.path.isdir(sys.argv[-1]):
     print("Output location is not a directory")
 
 for f in sys.argv[1:-1]:
